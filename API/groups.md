@@ -8,7 +8,9 @@
 	- **GET /groups/:group_name** グループの詳細を取得
 	- **POST /groups グループの作成**
 	- **DELETE /groups/:group_name** グループの削除
-	
+
+**※太字は認証が必要なAPI**
+
 ## 構造
 
 ```
