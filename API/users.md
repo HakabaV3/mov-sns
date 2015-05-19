@@ -56,7 +56,7 @@ POST /users
 	{
 		"status": "NG",
 		"result": {
-		    "code": 4,
+		    "code": 3,
 			"type":"id is missng.",
 			"detail": {}
 		}
@@ -70,7 +70,7 @@ POST /users
 		"stauts": "NG",
 		"result": {
 			"code": 4,
-			"type": "ALREADY_USED",
+			"type": "ALREADY_CREATED",
 			"detail": {
 				"email": "kikurage@sample.com",
 				"name": "kikurage"
@@ -114,7 +114,7 @@ patch /users/kikurage
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 2,
 			"type":"PERMISSION_DENIED",
 			"detail": {}
 		}

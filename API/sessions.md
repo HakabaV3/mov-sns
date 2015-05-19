@@ -67,7 +67,7 @@ POST /sessions/email
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 3,
 			"type":"INVALID_PARAMETER",
 			"detail": {
 				"email": "kikurage@sample.com",
@@ -83,7 +83,7 @@ POST /sessions/email
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 3,
 			"type": "email is missing.",
 			"detail": {}
 		}
@@ -126,7 +126,7 @@ POST /sessions/refresh
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 2,
 			"type":"PERMISSION_DENIED",
 			"detail": {}
 		}
@@ -166,7 +166,7 @@ DELETE /sessions
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 2,
 			"type":"PERMISSION_DENIED",
 			"detail": {}
 		}

@@ -22,11 +22,6 @@
 	"description": "This is a programming group.",
 	"owner": <% User %>,
 	"users": [ // 認証されたuserが参加していなければ空の配列
-		<% User %>,
-		<% User %>,
-		    .
-		    .
-		    .
 		<% User %>
 	]
 }
@@ -55,14 +50,7 @@ GET /groups
 	{
 		"status": "OK",
 		"result": {
-			"groups": [
-				<% Group %>,
-				<% Group %>,
-				     .
-				     .
-			    	 .
-				<% Group %>
-			]
+			"groups": [ <% Group %> ]
 		}
 	}
 	```
@@ -93,14 +81,7 @@ GET /groups/Hakaba
 			"updated": "2015-05-10 18:10",
 			"name": "Hakaba",
 			"description": "This is a programming group.",
-			"users": [
-				<% User %>,
-				<% User %>,
-					.
-					.
-					.
-				<% User %>
-			]
+			"users": [ <% User %> ]
 		}
 	}
 	```
@@ -166,7 +147,7 @@ POST /groups
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 2,
 			"type":"PERMISSION_DENIED",
 			"detail": {}
 		}
@@ -181,7 +162,7 @@ POST /groups
 		"stauts": "NG",
 		"result": {
 			"code": 4,
-			"type": "ALREADY_USED",
+			"type": "ALREADY_CREATED",
 			"detail": {
 				"name": "Hakaba"
 			}
@@ -222,7 +203,7 @@ DELETE /groups/Hakaba
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 2,
 			"type":"PERMISSION_DENIED",
 			"detail": {}
 		}
@@ -236,7 +217,7 @@ DELETE /groups/Hakaba
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 2,
 			"type": "PERMISSION_DENIED",
 			"detail": {
 				"owner_name": "kikurage",

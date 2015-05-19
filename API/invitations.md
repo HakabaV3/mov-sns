@@ -86,7 +86,7 @@ GET /groups/Hakaba/invitations/stogu
 	{
 		"status": "NG",
 		"result": {
-			"code": 4,
+			"code": 1,
 			"type": "NOT_FOUND",
 			"detail": {
 				"group_name": "Hakaba",
