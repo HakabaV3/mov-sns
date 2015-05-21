@@ -19,10 +19,10 @@
 
 @TODO: `code`をHTTPステータスコードみたいに意味のあるものにしたい.
 
-code | type | description |
- --- | --- | --- |
-   1 | NOT_FOUND | 指定されたモデルは存在しない |
-   2 | PERMISSION_DENIED | 権限がない |
-   3 | INVALID_PARAMETER | パラメータが不正 |
-   4 | ALREADY_CREATED | ユニークなデータがすでに作成されており、二重に作成できない |
- 999 | UNKNOWN | 原因不明のエラー |
+code | common | type | description |
+ --- |    --- | ---  | --- |
+   1 |    404 | NOT_FOUND | 指定されたモデルは存在しない |
+   2 |    401 | PERMISSION_DENIED | 権限がない |
+   3 |    400 | INVALID_PARAMETER | パラメータが不正 |
+   4 |    422 |ALREADY_CREATED | ユニークなデータがすでに作成されており、二重に作成できない |
+ 999 |    999 |UNKNOWN | 原因不明のエラー |
